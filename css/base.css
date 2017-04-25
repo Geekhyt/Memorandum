@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*css 初始化 */
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}
+select, input {vertical-align: middle;}
+textarea {resize: none;}
+a {text-decoration: none;}
+s, i, u, b{font-style: normal;text-decoration: none;}
+
+/*公共类*/
+/*清除浮动*/
+.clearfix:before, .clearfix:after{
+	/*设置添加的子元素的内容为空*/
+	content: "";
+	/*设置添加的子元素为块级元素*/
+	display: table;
+	/*设置添加的子元素的高度为0*/
+	height: 0;
+	/*设置添加的子元素看不见*/
+	visibility: hidden;
+	/*给添加的子元素设置clear: both;*/
+	clear: both;
+}
+.clearfix {
+	*zoom: 1; /*IE/7/6*/
+}
+/*版心 提取 */
+.w {
+	width: 1190px;
+	margin: 0 auto;
+}
+
+/*浮动*/
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+/*水平对齐方式*/
+.al {
+	text-align: left
+}
+
+.ac {
+	text-align: center
+}
+
+.ar {
+	text-align: right
+}
+
+/*显示隐藏*/
+.hide {
+	display: none
+}

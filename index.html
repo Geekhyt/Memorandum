@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>备忘录</title>
+    <link rel="shourtcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <h1>
+        <img src="images/memorandum.png" alt="">
+        <span>备忘录</span>
+    </h1>
+</div>
+
+<!--导航-->
+<div class="nav">
+    <h1 class="left">
+        <img src="images/memorandum.png" alt="">
+        <span>备忘录</span>
+    </h1>
+    <div class="right">
+        <input type="text" placeholder="给事项取一个名称">
+        <input type="submit" value="添加">
+    </div>
+</div>
+
+<!--内容-->
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">待办事项</a></li>
+        <li><a href="#tabs-2">已完成事项</a></li>
+    </ul>
+    <div id="tabs-1">
+        <ul class="task">
+        </ul>
+    </div>
+    <div id="tabs-2">
+        <ul class="finish-task">
+        </ul>
+    </div>
+</div>
+
+<div class="mask">
+    <div class="detail">
+        <div class="detail-top">
+            <span class="detail-title">标题</span>
+            <span class="detail-close">关闭</span>
+        </div>
+        <div class="detail-bottom">
+            <textarea class="detail-content"></textarea>
+            <p>提醒时间 </p>
+            <input type="text" class="date_time">
+            <button class="detail-btn">更新</button>
+        </div>
+    </div>
+</div>
+
+<img src="images/Top.jpg" class="back-top">
+<video src="images/girl.mp3"></video>
+<div class="notice">小懒猪起床尿尿咯~~~~</div>
+</body>
+
+<!-- Import Scripts-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/store.min.js"></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script src="js/index.js"></script>
+</html>

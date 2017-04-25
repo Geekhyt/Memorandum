@@ -1,0 +1,219 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+/*头部*/
+.header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.header h1,
+.nav h1 {
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #e0e0e0;
+    opacity:0.9;
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header img,
+.nav img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 34px;
+    top: 2px;
+}
+
+.header span,
+.nav span {
+    padding-left: 62px;
+}
+
+/*导航*/
+.nav {
+    padding-top: 25px;
+    box-sizing: border-box;
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    background-color: #fff;
+}
+
+.nav .left {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    font-size:18px;
+}
+
+.nav .left img {
+    left: 20px;
+    top: 2px;
+}
+.nav .left span {
+    padding-left:77px;
+}
+
+.nav .right {
+    float: left;
+    margin-top: 5px;
+}
+
+.nav .right input[type=text] {
+    width: 600px;
+    height: 44px;
+    float: left;
+    text-indent: 2em;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.nav .right input[type=submit] {
+    width: 100px;
+    height: 44px;
+    background-color: #e0e0e0;
+    color: #666;
+    font-weight:700;
+    font-size: 18px;
+    float: left;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*内容*/
+#tabs {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#tabs .item {
+    width: 100%;
+    height: 40px;
+    line-height: 44px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#tabs .item .item-del, #tabs .item .item-des {
+    float: right;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/*详情*/
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mask .detail {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -150px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mask .detail .detail-top {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+
+.mask .detail .detail-title {
+    font-size: 14px;
+    font-weight:700;
+    line-height: 20px;
+    float: left;
+}
+
+.mask .detail .detail-close {
+    float: right;
+    cursor: pointer;
+}
+
+.mask .detail .detail-content {
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    outline: none;
+    background-color: #ccc;
+}
+
+.mask .detail p {
+    line-height: 30px;
+}
+
+.mask .detail input[type=text] {
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    border: none;
+}
+
+.mask .detail .detail-btn {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    background-color: red;
+    border: none;
+    margin-top: 10px;
+    float: right;
+}
+
+/*返回顶部*/
+.back-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
+
+/*提醒*/
+.notice {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    display: none;
+}
